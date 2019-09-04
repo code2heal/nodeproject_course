@@ -1,0 +1,131 @@
+
+Techietherapy@DESKTOP-D4RLOIR MINGW64 ~/Documents/node_project/web_servers (master)
+$ heroku login
+heroku: Press any key to open up the browser to login or q to exit:
+Opening browser to https://cli-auth.heroku.com/auth/browser/dcc75917-ae41-4337-b0e4-dc3a8b961174
+heroku: Waiting for login... !
+JSONError: Unexpected end of JSON input while parsing near ' '
+    at module.exports (C:/Program Files/heroku/client/node_modules/parse-json/index.js:26:19)
+    at HTTP._parse (C:/Program Files/heroku/client/node_modules/@heroku-cli/command/node_modules/http-call/lib/http.js:343:25)
+
+Techietherapy@DESKTOP-D4RLOIR MINGW64 ~/Documents/node_project/web_servers (master)
+$ heroku login
+heroku: Press any key to open up the browser to login or q to exit:
+Opening browser to https://cli-auth.heroku.com/auth/browser/75dfd7ac-0e6f-4f89-8f4f-f70be98d5324
+heroku: Waiting for login...
+Logging in... done
+Logged in as visitamt@gmail.com
+
+^CTerminate batch job (Y/N)? n
+n
+
+Techietherapy@DESKTOP-D4RLOIR MINGW64 ~/Documents/node_project/web_servers (mast
+$ heroku keys:add
+Found an SSH public key at C:\Users\Techietherapy\.ssh\id_rsa.pub
+Would you like to upload it to Heroku? [Y/n]: y
+Uploading C:\Users\Techietherapy\.ssh\id_rsa.pub SSH key... done
+^CTerminate batch job (Y/N)? n
+n
+
+Techietherapy@DESKTOP-D4RLOIR MINGW64 ~/Documents/node_project/web_servers (master)
+$ heroku keys
+=== visitamt@gmail.com keys
+ssh-rsa AAAAB3NzaC...bcjBXdRw== visitamt@gmail.com
+
+Techietherapy@DESKTOP-D4RLOIR MINGW64 ~/Documents/node_project/web_servers (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+Techietherapy@DESKTOP-D4RLOIR MINGW64 ~/Documents/node_project/web_servers (master)
+$ git add .
+
+Techietherapy@DESKTOP-D4RLOIR MINGW64 ~/Documents/node_project/web_servers (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+Techietherapy@DESKTOP-D4RLOIR MINGW64 ~/Documents/node_project/web_servers (master)
+$ git commit -m "setup start scripts and heroku"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+Techietherapy@DESKTOP-D4RLOIR MINGW64 ~/Documents/node_project/web_servers (master)
+$ git push
+Everything up-to-date
+
+Techietherapy@DESKTOP-D4RLOIR MINGW64 ~/Documents/node_project/web_servers (master)
+$ heroku create
+Creating app... done, polar-brushlands-49157
+https://polar-brushlands-49157.herokuapp.com/ | https://git.heroku.com/polar-brushlands-49157.git
+
+Techietherapy@DESKTOP-D4RLOIR MINGW64 ~/Documents/node_project/web_servers (master)
+$ git push heroku
+Enumerating objects: 21, done.
+Counting objects: 100% (21/21), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (20/20), done.
+Writing objects: 100% (21/21), 9.89 KiB | 194.00 KiB/s, done.
+Total 21 (delta 8), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote:
+remote: -----> Node.js app detected
+remote:
+remote: -----> Creating runtime environment
+remote:
+remote:        NPM_CONFIG_LOGLEVEL=error
+remote:        NODE_ENV=production
+remote:        NODE_MODULES_CACHE=true
+remote:        NODE_VERBOSE=false
+remote:
+remote: -----> Installing binaries
+remote:        engines.node (package.json):  unspecified
+remote:        engines.npm (package.json):   unspecified (use default)
+remote:
+remote:        Resolving node version 10.x...
+remote:        Downloading and installing node 10.16.3...
+remote:        Using default npm version: 6.9.0
+remote:
+remote: -----> Installing dependencies
+remote:        Installing node modules (package.json + package-lock)
+remote:        added 62 packages from 82 contributors and audited 139 packages in 2.32s
+remote:        found 0 vulnerabilities
+remote:
+remote:
+remote: -----> Build
+remote:
+remote: -----> Pruning devDependencies
+remote:        audited 139 packages in 0.812s
+remote:        found 0 vulnerabilities
+remote:
+remote:
+remote: -----> Caching build
+remote:        - node_modules
+remote:
+remote: -----> Build succeeded!
+remote: -----> Discovering process types
+remote:        Procfile declares types     -> (none)
+remote:        Default types for buildpack -> web
+remote:
+remote: -----> Compressing...
+remote:        Done: 21.2M
+remote: -----> Launching...
+remote:        Released v3
+remote:        https://polar-brushlands-49157.herokuapp.com/ deployed to Heroku
+remote:
+remote: Verifying deploy... done.
+To https://git.heroku.com/polar-brushlands-49157.git
+ * [new branch]      master -> master
+
+Techietherapy@DESKTOP-D4RLOIR MINGW64 ~/Documents/node_project/web_servers (master)
+$ heroku open^C
+
+Techietherapy@DESKTOP-D4RLOIR MINGW64 ~/Documents/node_project/web_servers (master)
+$ heroku open
